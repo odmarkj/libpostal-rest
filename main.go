@@ -21,8 +21,8 @@ func main() {
 	r.HandleFunc("/parser", ParserHandler).Methods("POST")
 	r.HandleFunc("/ping", PingHandler).Methods("GET")
 	r.HandleFunc("/alive", AliveHandler).Methods("GET")
-	fmt.Println("listening on port 8080")
-	http.ListenAndServe(":8080", r)
+	fmt.Println("listening on port 8081")
+	http.ListenAndServe(":8081", r)
 }
 
 func ExpandHandler(w http.ResponseWriter, r *http.Request) {
